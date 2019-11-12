@@ -1,0 +1,20 @@
+{
+  "name": "LoginProfile",
+  "version": "1.0.0",
+  "description": "Application for Profile Management",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Shriram008/LoginProfile.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Shriram008/LoginProfile/issues"
+  },
+  "homepage": "https://github.com/Shriram008/LoginProfile#readme"
+}
