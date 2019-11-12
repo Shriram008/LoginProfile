@@ -6,6 +6,7 @@ import { Button, Container } from 'react-bootstrap';
 import SignupDetails from "./Login/SignupDetails";
 import LoginPage from "./Login/LoginPage";
 import HomePage from "./Login/HomePage.js"
+import ReadProfile from "./Login/ReadProfile.js"
 
 
  class FunctionalBar extends Component {
@@ -37,7 +38,7 @@ import HomePage from "./Login/HomePage.js"
           <Route path="/" exact component={HomePage} />
           {/* <Route path="/charts" exact component={PieChart} /> */}
         
-          {/* <Route path="/read/:id" component={ReadINC} /> */}
+           <Route path="/read/:id" component={ReadProfile} /> 
           <Route path="/login" component={LoginPage} />
           <Route path="/view" component={HomePage} />
           <Route path="/signup" component={SignupDetails} />

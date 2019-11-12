@@ -17,12 +17,13 @@ export default class SignupDetails extends Component {
         this.onChangeEmail = this.onChangeEmail.bind(this);
         this.onChangeUserName = this.onChangeUserName.bind(this);
         this.onChangePassword = this.onChangePassword.bind(this);
+        this.onChangeCreatedOn =  this.onChangeCreatedOn.bind(this);
        
         this.onSubmit = this.onSubmit.bind(this);
 
         this.state = {
             FirstName: '',
-            CreatedDate: new Date(),
+            CreatedOn: '',
             UserName: '',
             LastName: '',
             Gender: '',
@@ -31,6 +32,14 @@ export default class SignupDetails extends Component {
             
         }
         
+    }
+
+    onChangeCreatedOn(e){
+        console.log(e.target.value);
+        this.setState({
+            CreatedOn: e.target.value
+            
+        });
     }
 
     onChangeFirstName(e) {
@@ -101,7 +110,7 @@ export default class SignupDetails extends Component {
             Email: this.state.Email,
             UserName: this.state.UserName,
             Password: this.state.Password,
-            CreatedDate: this.state.CreatedDate
+            CreatedOn: this.state.CreatedOn
         }
 
 
@@ -112,7 +121,7 @@ export default class SignupDetails extends Component {
             
         this.setState({
             FirstName: '',
-            CreatedDate: new Date(),
+            CreatedOn: new Date(),
             UserName: '',
             LastName: '',
             Gender: '',
@@ -146,6 +155,15 @@ export default class SignupDetails extends Component {
                             className="form-control"
                             value={this.state.LastName}
                             onChange={this.onChangeLastName} required
+                        />
+                    </div>
+
+                    <div className="form-group">
+                        <label>Last Name: </label>
+                        <input type="date"
+                            className="form-control"
+                            value={this.state.CreatedOn}
+                            onChange={this.onChangeCreatedOn} required
                         />
                     </div>
 
@@ -191,8 +209,8 @@ export default class SignupDetails extends Component {
                         <label>UserName  </label>
                         <input type="text"
                             className="form-control"
-                            value={this.state.Username}
-                            onChange={this.onChangeUsername} required
+                            value={this.state.UserName}
+                            onChange={this.onChangeUserName} required
                         />
                     </div>
 

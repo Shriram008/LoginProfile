@@ -110,7 +110,7 @@ class HomePage extends React.Component {
                         <tr>
                             <th>User Name</th>
                             
-                             <th>Profile Created On</th> 
+                             <th>Date of birth</th> 
                             <th>Email ID</th>
                             
                         </tr>
