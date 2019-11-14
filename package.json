@@ -45,6 +45,6 @@
   "bugs": {
     "url": "https://github.com/Shriram008/LoginProfile/issues"
   },
-  "homepage": "https://github.com/Shriram008/LoginProfile#readme"
+  "homepage": "https://github.com/Shriram008/LoginProfile#readme",
   "heroku-postbuild": "cd loginfrontend && npm install && npm run build"
 }
